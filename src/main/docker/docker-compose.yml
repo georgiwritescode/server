@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    container_name: server
+    image: "postgres:latest"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: gosho
+      POSTGRES_PASSWORD: gosho
+      POSTGRES_DB: server
